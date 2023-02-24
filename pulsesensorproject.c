@@ -47,5 +47,5 @@ while (!(IFG2&UCA0TXIFG)); //TX müsait olana kadar bekle
 UCA0TXBUF = gelendeger; // bu degiskende tutulan degeri tx bufferina aktararak uartla
 gönerilecek veriyi söyelmis oluyoruz.
 ADC10CTL0 |= ENC + ADC10SC; // enc biti adc10sc biti ile kullanilir adc çevrsm tek 
-çevrim modundayken adc10sc biti ile bu bitte logic bir yapildiginda baslamaktadir
+çevrim modundayken adc10sc biti ile bu bitte logic bir yapildiginda baslamaktadir.
 }
