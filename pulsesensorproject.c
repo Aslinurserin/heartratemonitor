@@ -5,7 +5,7 @@ void uart_init(void);
 void adc_init(void);
 int main(void)
 {
-WDTCTL = WDTPW | WDTHOLD; // stop watchdog timer
+WDTCTL = WDTPW | WDTHOLD; // watchdog timer durdur
 DCOCTL = 0;
 BCSCTL1 = CALBC1_1MHZ; 
 DCOCTL = CALDCO_1MHZ;
