@@ -34,7 +34,7 @@ ADC10CTL0 &= ~ENC; //Can be modified only when ENC = 0
 ADC10CTL0 = ADC10SHT_3 + ADC10ON + REF0N + ADC10IE; // ADC10ON, interrupt 
 enabled , X64 örnekleme kaç adc clock darbesi alnacagini söyler
 ADC10CTL1 = INCH_4 ; // input p1.4 analog giris ayari
-ADC10AE0 |= BIT4; // Analog (input) enable control register satlayicisina bit 4 girise seçtigimiz
+ADC10AE0 |= BIT4; // Analog (input) enable control register satlayicisina bit 4 girise seçtigimiz.
 pini aktif etmek için
 ADC10CTL0 |= ENC + ADC10SC; // Sampling and conversion start
 }
